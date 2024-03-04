@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productdetails",
+  "info": {
+    "singularName": "productdetail",
+    "pluralName": "productdetails",
+    "displayName": "productdetail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 70,
+      "minLength": 5
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "ProductdetailMainheading": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "interiorFirstHeading": {
+      "type": "string",
+      "required": true
+    },
+    "interiorFirstDes": {
+      "type": "text",
+      "required": true
+    },
+    "interiorSecondHeading": {
+      "type": "string",
+      "required": true
+    },
+    "interiorSecondDes": {
+      "type": "text",
+      "required": true
+    },
+    "interiorThirdHeading": {
+      "type": "string",
+      "required": true
+    },
+    "interiorThirdDes": {
+      "type": "text",
+      "required": true
+    },
+    "interiorMainHeading": {
+      "type": "string",
+      "required": true
+    },
+    "Orderbtn": {
+      "type": "string",
+      "required": false
+    },
+    "LearnMorebtn": {
+      "type": "string"
+    },
+    "FreeTrialbtn": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

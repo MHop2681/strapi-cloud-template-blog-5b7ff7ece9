@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nuclearmedicinepagefirstsections",
+  "info": {
+    "singularName": "nuclearmedicinepagefirstsection",
+    "pluralName": "nuclearmedicinepagefirstsections",
+    "displayName": "nuclearmedicinepagefirstsection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "freetrailbtn": {
+      "type": "string",
+      "required": true
+    },
+    "statsone": {
+      "type": "string",
+      "required": true
+    },
+    "statstwo": {
+      "type": "string",
+      "required": true
+    },
+    "statsthree": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surgical_imagings",
+  "info": {
+    "singularName": "surgical-imaging",
+    "pluralName": "surgical-imagings",
+    "displayName": "Surgical Imaging",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "Description": {
+      "type": "text",
+      "required": false
+    },
+    "freetrailbtn": {
+      "type": "string",
+      "required": true
+    },
+    "orderbtn": {
+      "type": "string",
+      "required": true
+    },
+    "statsone": {
+      "type": "string",
+      "required": false
+    },
+    "statstwo": {
+      "type": "string",
+      "required": false
+    },
+    "statsthree": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
