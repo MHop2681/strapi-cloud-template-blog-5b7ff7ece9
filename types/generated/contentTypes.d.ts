@@ -814,36 +814,6 @@ export interface ApiBlogBlog extends Schema.CollectionType {
   };
 }
 
-export interface ApiButtonButton extends Schema.CollectionType {
-  collectionName: 'buttons';
-  info: {
-    singularName: 'button';
-    pluralName: 'buttons';
-    displayName: 'button';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    buttonName: Attribute.String & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::button.button',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::button.button',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiFooterFooter extends Schema.CollectionType {
   collectionName: 'footers';
   info: {
@@ -915,7 +885,8 @@ export interface ApiNuclearmedicinepagefirstsectionNuclearmedicinepagefirstsecti
   info: {
     singularName: 'nuclearmedicinepagefirstsection';
     pluralName: 'nuclearmedicinepagefirstsections';
-    displayName: 'nuclearmedicinepagefirstsection';
+    displayName: 'nuclear medicine';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -950,7 +921,7 @@ export interface ApiProductdetailProductdetail extends Schema.CollectionType {
   info: {
     singularName: 'productdetail';
     pluralName: 'productdetails';
-    displayName: 'productdetail';
+    displayName: 'product detail';
     description: '';
   };
   options: {
@@ -975,6 +946,7 @@ export interface ApiProductdetailProductdetail extends Schema.CollectionType {
     Orderbtn: Attribute.String;
     LearnMorebtn: Attribute.String;
     FreeTrialbtn: Attribute.String;
+    URL_Route: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1050,7 +1022,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::blog.blog': ApiBlogBlog;
-      'api::button.button': ApiButtonButton;
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
       'api::nuclearmedicinepagefirstsection.nuclearmedicinepagefirstsection': ApiNuclearmedicinepagefirstsectionNuclearmedicinepagefirstsection;

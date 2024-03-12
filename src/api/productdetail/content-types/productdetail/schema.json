@@ -4,7 +4,7 @@
   "info": {
     "singularName": "productdetail",
     "pluralName": "productdetails",
-    "displayName": "productdetail",
+    "displayName": "product detail",
     "description": ""
   },
   "options": {
@@ -71,6 +71,9 @@
     "FreeTrialbtn": {
       "type": "string",
       "required": false
+    },
+    "URL_Route": {
+      "type": "string"
     }
   }
 }
