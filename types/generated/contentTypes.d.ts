@@ -879,6 +879,43 @@ export interface ApiHeaderHeader extends Schema.CollectionType {
   };
 }
 
+export interface ApiNuclearMedicineLandingPageNuclearMedicineLandingPage
+  extends Schema.CollectionType {
+  collectionName: 'nuclear_medicine_landing_pages';
+  info: {
+    singularName: 'nuclear-medicine-landing-page';
+    pluralName: 'nuclear-medicine-landing-pages';
+    displayName: 'Nuclear Medicine Landing Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    Description: Attribute.Text;
+    LearnMorebtn: Attribute.String;
+    statsone: Attribute.String;
+    statstwo: Attribute.String;
+    statsthree: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::nuclear-medicine-landing-page.nuclear-medicine-landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::nuclear-medicine-landing-page.nuclear-medicine-landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiNuclearmedicinepagefirstsectionNuclearmedicinepagefirstsection
   extends Schema.CollectionType {
   collectionName: 'nuclearmedicinepagefirstsections';
@@ -894,7 +931,7 @@ export interface ApiNuclearmedicinepagefirstsectionNuclearmedicinepagefirstsecti
   attributes: {
     title: Attribute.String & Attribute.Required;
     Description: Attribute.Text & Attribute.Required;
-    freetrailbtn: Attribute.String & Attribute.Required;
+    LearnMorebtn: Attribute.String & Attribute.Required;
     statsone: Attribute.String & Attribute.Required;
     statstwo: Attribute.String & Attribute.Required;
     statsthree: Attribute.String & Attribute.Required;
@@ -1024,6 +1061,7 @@ declare module '@strapi/types' {
       'api::blog.blog': ApiBlogBlog;
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
+      'api::nuclear-medicine-landing-page.nuclear-medicine-landing-page': ApiNuclearMedicineLandingPageNuclearMedicineLandingPage;
       'api::nuclearmedicinepagefirstsection.nuclearmedicinepagefirstsection': ApiNuclearmedicinepagefirstsectionNuclearmedicinepagefirstsection;
       'api::productdetail.productdetail': ApiProductdetailProductdetail;
       'api::surgical-imaging.surgical-imaging': ApiSurgicalImagingSurgicalImaging;

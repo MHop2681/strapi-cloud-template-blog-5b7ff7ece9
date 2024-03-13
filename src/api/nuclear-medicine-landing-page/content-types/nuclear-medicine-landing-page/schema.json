@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nuclear_medicine_landing_pages",
+  "info": {
+    "singularName": "nuclear-medicine-landing-page",
+    "pluralName": "nuclear-medicine-landing-pages",
+    "displayName": "Nuclear Medicine Landing Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "LearnMorebtn": {
+      "type": "string"
+    },
+    "statsone": {
+      "type": "string"
+    },
+    "statstwo": {
+      "type": "string"
+    },
+    "statsthree": {
+      "type": "string"
+    }
+  }
+}
